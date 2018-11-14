@@ -9,4 +9,6 @@ import java.util.List;
 public interface ContactRepository extends CrudRepository<Contact,Long> {
 
     List<Contact> findByFirstName(String firstName);
+    Contact save(Contact contact);
+    List<Contact> findAll();
 }

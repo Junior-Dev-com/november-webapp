@@ -25,6 +25,7 @@ public class PhonebookController {
 
     @RequestMapping("/list")
     public String list(Map<String,Object> model){
+        contactService.addDummyContacts();
         model.put("contacts",contactService.listDummyContacts());
         return "list";
     }

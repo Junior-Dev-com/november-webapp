@@ -52,4 +52,7 @@ public class Contact {
         this.lastName = lastName;
         this.mobile = mobile;
     }
+    public Contact (){
+
+    }
 }
